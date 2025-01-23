@@ -31,8 +31,6 @@ jobs:
      uses: actions/checkout@v2
    - name: Set up Docker
      uses: docker-practice/actions-setup-docker@v1
-     with:
-       docker_version: '27.5.0'
    - name: Build Docker Iamge
      run: docker build -f Dockerfile -t my-pygoat:latest .
    - name: Docker Scout Scan
